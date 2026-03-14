@@ -1,0 +1,67 @@
+
+{
+  "entities": {
+    "MenuItem": {
+      "title": "Item do Cardápio",
+      "description": "Pratos, entradas e bebidas do Trem Bar.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Nome do prato" },
+        "description": { "type": "string", "description": "Descrição detalhada" },
+        "category": { "type": "string", "enum": ["entradas", "principais", "bebidas", "drinks"] },
+        "imageUrl": { "type": "string", "format": "uri" },
+        "badge": { "type": "string", "description": "Ex: Destaque, Novo" },
+        "price": { "type": "number", "description": "Preço para uso interno" }
+      },
+      "required": ["name", "category"]
+    },
+    "Event": {
+      "title": "Evento",
+      "description": "Programação de eventos e noites especiais.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "date": { "type": "string", "format": "date-time" },
+        "type": { "type": "string", "enum": ["Música ao Vivo", "Datas Especiais", "Corporativo"] },
+        "imageUrl": { "type": "string", "format": "uri" },
+        "isRecurring": { "type": "boolean" }
+      },
+      "required": ["title", "date", "type"]
+    },
+    "GalleryItem": {
+      "title": "Item da Galeria",
+      "description": "Fotos do ambiente e gastronomia.",
+      "type": "object",
+      "properties": {
+        "imageUrl": { "type": "string", "format": "uri" },
+        "category": { "type": "string", "enum": ["Gastronomia", "Drinks", "Ambiente", "Eventos"] },
+        "altText": { "type": "string" }
+      },
+      "required": ["imageUrl", "category"]
+    },
+    "ContactMessage": {
+      "title": "Mensagem de Contato",
+      "description": "Mensagens enviadas pelo formulário de contato.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "message"]
+    }
+  },
+  "auth": {
+    "providers": ["google.com"]
+  },
+  "firestore": {
+    "/menu": { "schema": "MenuItem", "description": "Coleção de itens do cardápio" },
+    "/events": { "schema": "Event", "description": "Coleção de eventos" },
+    "/gallery": { "schema": "GalleryItem", "description": "Coleção de fotos da galeria" },
+    "/contacts": { "schema": "ContactMessage", "description": "Mensagens de contato recebidas" }
+  }
+}

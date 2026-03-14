@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Mesa farta com comida mineira típica em ambiente rústico",
+      "imageUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=85&fit=crop&crop=center",
+      "imageHint": "brazilian minas gerais food rustic"
+    },
+    {
+      "id": "torresmo",
+      "description": "Torresmo de rolo crocante",
+      "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800",
+      "imageHint": "torresmo brasileiro"
+    },
+    {
+      "id": "pao-de-queijo",
+      "description": "Pão de queijo mineiro artesanal",
+      "imageUrl": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=800",
+      "imageHint": "pão de queijo mineiro"
+    },
+    {
+      "id": "frango-molho-pardo",
+      "description": "Frango ao molho pardo mineiro",
+      "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800",
+      "imageHint": "frango molho pardo mineiro"
+    },
+    {
+      "id": "feijao-tropeiro",
+      "description": "Feijão tropeiro completo",
+      "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=800",
+      "imageHint": "feijão tropeiro mineiro"
+    },
+    {
+      "id": "caipirinha",
+      "description": "Drink Maria Fumaça com cachaça artesanal",
+      "imageUrl": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800",
+      "imageHint": "caipirinha cachaça brasil"
+    },
+    {
+      "id": "chopp",
+      "description": "Chopp gelado artesanal",
+      "imageUrl": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=800",
+      "imageHint": "chopp gelado draft beer"
+    },
+    {
+      "id": "about-chef",
+      "description": "Chef preparando comida mineira artesanal",
+      "imageUrl": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800",
+      "imageHint": "cozinha mineira chef artesanal"
+    },
+    {
+      "id": "gallery-event",
+      "description": "Show de música ao vivo no bar",
+      "imageUrl": "https://images.unsplash.com/photo-1514525253344-f814d074e015?q=80&w=800",
+      "imageHint": "live music bar atmosphere"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 15 100% 3%;
+    --foreground: 43 56% 90%;
+    --card: 20 67% 13%;
+    --card-foreground: 43 56% 90%;
+    --popover: 20 67% 13%;
+    --popover-foreground: 43 56% 90%;
+    --primary: 38 66% 47%;
+    --primary-foreground: 43 56% 90%;
+    --secondary: 25 43% 31%;
+    --secondary-foreground: 43 56% 90%;
+    --muted: 25 43% 20%;
+    --muted-foreground: 43 20% 70%;
+    --accent: 38 66% 47%;
+    --accent-foreground: 15 100% 3%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 25 43% 25%;
+    --input: 25 43% 25%;
+    --ring: 38 66% 47%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-primary/30 selection:text-primary;
+  }
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-text {
+  color: #C8922A;
+}
+
+.bg-trem-dark {
+  background-color: #1A0A00;
+}
+
+.bg-trem-brown {
+  background-color: #3B1A08;
+}
+
+.border-trem-gold {
+  border-color: #C8922A;
+}
+
+.gold-glow:hover {
+  text-shadow: 0 0 8px rgba(200, 146, 42, 0.5);
+}
+
+.art-deco-border {
+  border-image: linear-gradient(to right, transparent, #C8922A, transparent) 1;
+  border-bottom: 1px solid;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 10px;
+}
+
+.masonry-item {
+  grid-row-end: span 20;
+}
+
+.google-maps-dark {
+  filter: invert(90%) hue-rotate(180deg);
+}
